@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMU OTORI</title>
+    <style>
+        #maindiv {
+            border: white solid;
+            border-radius: 40px;
+            box-shadow: 1px 1px 25px 10px #bcbcbc;
+            width: 300px;
+            height: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            scrollbar-width: none;
+            
+        }
+        .paragraph {
+            padding: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+        }
+        img {
+            width: 8%;
+        }
+        #password {
+            width: 60%;
+            text-align: center;
+            border: black solid 3px;
+        }
+        #proceedbtn {
+                background-color: white;
+                border-radius: 50px;
+                box-shadow: 1px 1px 15px 3px #bcbcbc;
+                border: white;
+                width: 90px;
+                height: 30px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <p class="paragraph" id="textmn">
+            Hello!!! To Receive your three Emu Otori 
+            <br> 
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <br>
+            You must enter the correct password!!! <br> <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%"> <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%"> <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%"> <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%"> <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%"> <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%"> <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <br>
+            Enter the secret password!! <img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%"><img src="https://i.ibb.co/8r4rvpn/image-2024-04-07-132546016.png" width="5%">
+            <div id="passdiv">
+                <input type="password" id="password" onchange="verify()">
+            </div>
+            <div id="forward">
+            </div>
+            <p class="paragraph" id="access">
+            </p>
+            
+        </p>
+    </div>
+    <script>
+        function verify() {
+            let password = document.getElementById("password").value
+            if (password == "KIRAKIRADOKIDOKIMOCHIMOCHIPUYOPUYOWAKUWAKU") { 
+                document.getElementById("forward").innerHTML = '<a href="emuotori.html"><button id="proceedbtn"><b>Proceed</b></button></a>'
+                document.getElementById("textmn").innerHTML = "You are worthy of Emu Otori!!! You may proceed!!!"
+                document.getElementById("passdiv").style.display = "none";
+                document.getElementById("access").style.display = "none";
+
+            } else {
+                document.getElementById("access").innerHTML = "Incorrect. You are not worthy of Emu Otori"
+            }
+        }
+    </script>
+</body>
+</html>
